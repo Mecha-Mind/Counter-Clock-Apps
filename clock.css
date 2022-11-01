@@ -128,6 +128,9 @@ h2 {
 /* Counter page link */
 p {
   font-size: 18px;
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  padding: 10px;
 }
 p a {
   text-decoration: none;
