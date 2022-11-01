@@ -30,6 +30,7 @@ body {
 @media (max-width: 767px) {
   .timer {
     width: 250px;
+    height: 400px;
   }
 }
 .in {
@@ -99,10 +100,10 @@ body {
 
 /* Clock page link */
 p {
-  font-size: 22px;
+  font-size: 18px;
 }
 p a {
   text-decoration: none;
-  font: bold 28px Arial;
+  font: bold 22px Arial;
   color: #333;
 }
