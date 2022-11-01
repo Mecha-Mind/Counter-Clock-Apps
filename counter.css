@@ -1,0 +1,108 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, hsl(202, 58%, 25%), hsl(202, 100%, 65%));
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.timer {
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(rgb(180, 59, 59), #444);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  border-radius: 50px;
+}
+@media (max-width: 767px) {
+  .timer {
+    width: 250px;
+  }
+}
+.in {
+  width: calc(100% - 15px);
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  color: #fff;
+}
+.timer span {
+  width: calc((100% - 15px) /3);
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.timer span:first-child::before {
+  content: 'Hr';
+}
+.timer span:nth-child(2)::before {
+  content: 'Min';
+}
+.timer span:nth-child(3)::before {
+  content: 'Sec';
+}
+.timer span:first-child::before,
+.timer span:nth-child(2)::before,
+.timer span:nth-child(3)::before {
+  width: 100%;
+  height: 100%;
+  background-color: chocolate;
+  padding: 15px;
+  border-radius: 40px;
+}
+@media (max-width: 767px) {
+  .timer span:first-child::before,
+.timer span:nth-child(2)::before,
+.timer span:nth-child(3)::before {
+  font-size: 14px;
+  width: auto;
+}
+}
+.timer .btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 50px;
+}
+.timer button {
+  font-size: 18px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: aquamarine;
+  transition: .3s;
+  cursor: pointer;
+}
+.timer button:hover {
+  background-color: aqua;
+  color: #fff;
+}
+
+/* Clock page link */
+p {
+  font-size: 22px;
+}
+p a {
+  text-decoration: none;
+  font: bold 28px Arial;
+  color: #333;
+}
